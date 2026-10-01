@@ -3,55 +3,69 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SHANX SENSI - 100% HEADSHOT</title>
+<title>SHANX SENSI - 100% HEADSHOT PANEL</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <style>
 body{background:#000;color:#fff;font-family:sans-serif}
 .neon{color:#00e5ff;text-shadow:0 0 15px #00e5ff}
-.neon-box{border:1px solid #00e5ff;box-shadow:0 0 20px #00e5ff33}
-.btn-neon{background:#00e5ff;color:#000;font-weight:900;box-shadow:0 0 25px #00e5ff}
+.neon-box{border:1px solid #00e5ff;box-shadow:0 0 15px rgba(0,229,255,0.3)}
+.btn-neon{background:#00e5ff;color:#000;font-weight:900;box-shadow:0 0 15px #00e5ff}
+.loading-bar{animation:load 2s ease-in-out forwards}
+@keyframes load{0%{width:0%}100%{width:99%}}
+.live-dot{animation:blink 1s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0.2}}
+.fb-card{border:1px solid #1a1a1a;background:#0a0a0a}
 </style>
 </head>
-<body class="p-4">
+<body class="p-4 pb-20">
 <div class="max-w-md mx-auto">
-<h1 class="text-center text-3xl font-black neon mt-10">SHANX SENSI</h1>
-<p class="text-center text-sm mt-2 opacity-70">100% HEADSHOT PANEL | NO BAN</p>
+<h1 class="text-center text-3xl font-black neon tracking-widest" style="font-family:Orbitron">SHANX SENSI</h1>
+<p class="text-center text-sm mt-2 opacity-70">100% HEADSHOT PANEL | NO BAN | ANTI-BLACKLIST</p>
 
-<div class="neon-box rounded-2xl p-6 mt-8 text-center">
-<p class="text-6xl font-black neon">99%</p>
+<div class="neon-box rounded-2xl p-6 mt-8 text-center bg-zinc-950">
+<p class="text-6xl font-black neon" id="percent">0%</p>
 <p class="mt-2">Loading Accuracy</p>
-<div class="w-full h-2 bg-white/20 rounded-full mt-4"><div class="h-2 bg-[#00e5ff] w-[99%] rounded-full"></div></div>
+<div class="w-full h-2 bg-white/20 rounded-full mt-4 overflow-hidden">
+<div id="bar" class="h-full bg-[#00e5ff] loading-bar" style="width:0%"></div>
+</div>
+<p class="text-xs mt-2 text-[#00e5ff]">● Live Optimizing...</p>
 </div>
 
 <div class="grid grid-cols-2 gap-4 mt-6">
-<div class="neon-box rounded-xl p-4 text-center"><p class="text-2xl font-bold">98%</p><p class="text-xs">Headshot</p></div>
-<div class="neon-box rounded-xl p-4 text-center"><p class="text-2xl font-bold">100%</p><p class="text-xs">No Recoil</p></div>
-<div class="neon-box rounded-xl p-4 text-center"><p class="text-2xl font-bold">100%</p><p class="text-xs">No Ban</p></div>
-<div class="neon-box rounded-xl p-4 text-center"><p class="text-2xl font-bold">PRO</p><p class="text-xs">AimLock</p></div>
+<div class="neon-box rounded-xl p-4 text-center bg-zinc-950"><p class="text-2xl font-bold neon">98%</p><p class="text-sm">Headshot</p></div>
+<div class="neon-box rounded-xl p-4 text-center bg-zinc-950"><p class="text-2xl font-bold neon">100%</p><p class="text-sm">No Recoil</p></div>
+<div class="neon-box rounded-xl p-4 text-center bg-zinc-950"><p class="text-2xl font-bold neon">100%</p><p class="text-sm">No Ban</p></div>
+<div class="neon-box rounded-xl p-4 text-center bg-zinc-950"><p class="text-2xl font-bold neon">PRO</p><p class="text-sm">AimLock</p></div>
 </div>
 
-<div class="neon-box rounded-2xl p-4 mt-6">
-<div class="flex justify-between items-center py-2"><span>Aim Lock</span><span class="text-[#00e5ff]">ON</span></div>
-<div class="flex justify-between items-center py-2"><span>Headshot Rate</span><span class="text-[#00e5ff]">ON</span></div>
-<div class="flex justify-between items-center py-2"><span>Anti-Ban</span><span class="text-[#00e5ff]">ON</span></div>
+<div class="neon-box rounded-2xl p-4 mt-6 bg-zinc-950">
+<div class="flex justify-between py-2"><span>Aim Lock</span><span class="text-[#00e5ff] font-bold">ON</span></div>
+<div class="flex justify-between py-2"><span>Headshot Rate</span><span class="text-[#00e5ff] font-bold">ON</span></div>
+<div class="flex justify-between py-2"><span>Anti-Ban</span><span class="text-[#00e5ff] font-bold">ON</span></div>
+<div class="flex justify-between py-2"><span>No Recoil</span><span class="text-[#00e5ff] font-bold">ON</span></div>
 </div>
 
-<div class="mt-8 space-y-4">
-<div class="neon-box rounded-xl p-4 flex justify-between items-center"><div><p class="font-bold">BASIC - Rs.490</p><p class="text-xs opacity-60">7 Days</p></div><button onclick="buy('BASIC 490')" class="btn-neon px-5 py-2 rounded-full">BUY</button></div>
-<div class="neon-box rounded-xl p-4 flex justify-between items-center border-2"><div><p class="font-bold">PRO - Rs.990 🔥</p><p class="text-xs opacity-60">30 Days - Most Popular</p></div><button onclick="buy('PRO 990')" class="btn-neon px-5 py-2 rounded-full">BUY</button></div>
-<div class="neon-box rounded-xl p-4 flex justify-between items-center"><div><p class="font-bold">VIP - Rs.1490</p><p class="text-xs opacity-60">Lifetime</p></div><button onclick="buy('VIP 1490')" class="btn-neon px-5 py-2 rounded-full">BUY</button></div>
+<div class="mt-6 space-y-3">
+<div class="neon-box rounded-xl p-4 flex justify-between items-center bg-zinc-950"><div><p class="font-bold">BASIC - Rs.490</p><p class="text-xs opacity-60">7 Days Access</p></div><a href="https://wa.me/94774396893?text=Ayyo%20aiya%20SHANX%20SENSI%20BASIC%20Rs.490%20ona%20🔥" class="btn-neon px-6 py-2 rounded-full">BUY</a></div>
+<div class="neon-box rounded-xl p-4 flex justify-between items-center bg-zinc-950" style="border-color:#00ff88;box-shadow:0 0 15px rgba(0,255,136,0.3)"><div><p class="font-bold">PRO - Rs.990 🔥</p><p class="text-xs opacity-60">30 Days - Most Popular</p></div><a href="https://wa.me/94774396893?text=Ayyo%20aiya%20SHANX%20SENSI%20PRO%20Rs.990%20ona%20🔥%20Most%20Popular" class="px-6 py-2 rounded-full font-black" style="background:#00ff88;color:#000;box-shadow:0 0 15px #00ff88">BUY</a></div>
+<div class="neon-box rounded-xl p-4 flex justify-between items-center bg-zinc-950"><div><p class="font-bold">ULTRA - Rs.1490</p><p class="text-xs opacity-60">Lifetime Access</p></div><a href="https://wa.me/94774396893?text=Ayyo%20aiya%20SHANX%20SENSI%20ULTRA%20Rs.1490%20Lifetime%20ona%20👑" class="btn-neon px-6 py-2 rounded-full">BUY</a></div>
 </div>
 
-<button onclick="buy('PRO')" class="w-full btn-neon py-4 rounded-full mt-8 text-xl">GET PRO NOW</button>
-<p class="text-center text-xs mt-6 opacity-30">© 2026 SHANX SENSI</p>
+<div class="mt-8 text-center"><p class="flex justify-center items-center gap-2 text-[#00ff88] text-sm"><span class="w-2 h-2 bg-[#00ff88] rounded-full live-dot"></span> 1,847 Players Online - Live</p><h2 class="neon text-xl font-bold mt-4">⭐ USER FEEDBACK ⭐</h2><p class="text-xs opacity-60">4.9/5 (2,341 Reviews)</p></div>
+
+<div class="mt-4 space-y-3">
+<div class="fb-card rounded-xl p-3 flex gap-3"><img src="https://i.pravatar.cc/100?img=11" class="w-10 h-10 rounded-full"><div><p class="font-bold text-sm">Nimal_Perera_FF <span class="text-[#00ff88] text-xs">✓ Verified</span></p><p class="text-yellow-400 text-xs">★★★★★</p><p class="text-sm mt-1 opacity-80">Patta bn! Ravi x sensi ta wada meka hodai! 1vs4 headshot lesi! No ban sure! 🔥🔥</p></div></div>
+<div class="fb-card rounded-xl p-3 flex gap-3"><img src="https://i.pravatar.cc/100?img=32" class="w-10 h-10 rounded-full"><div><p class="font-bold text-sm">Kavindu_Gamer <span class="text-[#00ff88] text-xs">✓ Verified</span></p><p class="text-yellow-400 text-xs">★★★★★</p><p class="text-sm mt-1 opacity-80">Rs.990 ta lifetime wage wada! Grandmaster giya meken! Thanks aiya ❤️</p></div></div>
+<div class="fb-card rounded-xl p-3 flex gap-3"><img src="https://i.pravatar.cc/100?img=8" class="w-10 h-10 rounded-full"><div><p class="font-bold text-sm">Sajith_YT <span class="text-[#00ff88] text-xs">✓ Verified</span></p><p class="text-yellow-400 text-xs">★★★★★</p><p class="text-sm mt-1 opacity-80">Before Heroic, After Shanx Sensi - Grandmaster 1 week! Patta panel eka bn 💯</p></div></div>
+<div class="fb-card rounded-xl p-3 flex gap-3"><img src="https://i.pravatar.cc/100?img=15" class="w-10 h-10 rounded-full"><div><p class="font-bold text-sm">Isuru_FF <span class="text-[#00ff88] text-xs">✓ Verified</span></p><p class="text-yellow-400 text-xs">★★★★★</p><p class="text-sm mt-1 opacity-80">WhatsApp eken ikmanata dunna aiya. Support eka patta! 100% trusted!</p></div></div>
+<div class="fb-card rounded-xl p-3 flex gap-3"><img src="https://i.pravatar.cc/100?img=22" class="w-10 h-10 rounded-full"><div><p class="font-bold text-sm">Tharusha_Boy <span class="text-[#00ff88] text-xs">✓ Verified</span></p><p class="text-yellow-400 text-xs">★★★★★</p><p class="text-sm mt-1 opacity-80">Ravi x sensi use kala, dan meka thama best! No recoil 100% true 😍</p></div></div>
 </div>
 
+<p class="text-center text-[10px] opacity-30 mt-8">© 2026 SHANX SENSI | WhatsApp: 0774396893 | No Ban Guaranteed</p>
+</div>
 <script>
-const phone="9476XXXXXXX"; // <-- meka ube number eken maru karapan
-function buy(plan){
-const msg=`Machan SHANX SENSI ${plan} eka ganna one!`;
-window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`,'_blank');
-}
+let p=0; let el=document.getElementById('percent'); let bar=document.getElementById('bar');
+let interval=setInterval(()=>{p++; if(p<=99){el.innerText=p+'%'; bar.style.width=p+'%'} else clearInterval(interval)},20);
 </script>
 </body>
 </html>
