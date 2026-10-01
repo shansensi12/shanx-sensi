@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SHANX SENSI - 100% HEADSHOT</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+body{background:#000;color:#fff;font-family:sans-serif}
+.neon{color:#00e5ff;text-shadow:0 0 15px #00e5ff}
+.neon-box{border:1px solid #00e5ff;box-shadow:0 0 20px #00e5ff33}
+.btn-neon{background:#00e5ff;color:#000;font-weight:900;box-shadow:0 0 25px #00e5ff}
+</style>
+</head>
+<body class="p-4">
+<div class="max-w-md mx-auto">
+<h1 class="text-center text-3xl font-black neon mt-10">SHANX SENSI</h1>
+<p class="text-center text-sm mt-2 opacity-70">100% HEADSHOT PANEL | NO BAN</p>
+
+<div class="neon-box rounded-2xl p-6 mt-8 text-center">
+<p class="text-6xl font-black neon">99%</p>
+<p class="mt-2">Loading Accuracy</p>
+<div class="w-full h-2 bg-white/20 rounded-full mt-4"><div class="h-2 bg-[#00e5ff] w-[99%] rounded-full"></div></div>
+</div>
+
+<div class="grid grid-cols-2 gap-4 mt-6">
+<div class="neon-box rounded-xl p-4 text-center"><p class="text-2xl font-bold">98%</p><p class="text-xs">Headshot</p></div>
+<div class="neon-box rounded-xl p-4 text-center"><p class="text-2xl font-bold">100%</p><p class="text-xs">No Recoil</p></div>
+<div class="neon-box rounded-xl p-4 text-center"><p class="text-2xl font-bold">100%</p><p class="text-xs">No Ban</p></div>
+<div class="neon-box rounded-xl p-4 text-center"><p class="text-2xl font-bold">PRO</p><p class="text-xs">AimLock</p></div>
+</div>
+
+<div class="neon-box rounded-2xl p-4 mt-6">
+<div class="flex justify-between items-center py-2"><span>Aim Lock</span><span class="text-[#00e5ff]">ON</span></div>
+<div class="flex justify-between items-center py-2"><span>Headshot Rate</span><span class="text-[#00e5ff]">ON</span></div>
+<div class="flex justify-between items-center py-2"><span>Anti-Ban</span><span class="text-[#00e5ff]">ON</span></div>
+</div>
+
+<div class="mt-8 space-y-4">
+<div class="neon-box rounded-xl p-4 flex justify-between items-center"><div><p class="font-bold">BASIC - Rs.490</p><p class="text-xs opacity-60">7 Days</p></div><button onclick="buy('BASIC 490')" class="btn-neon px-5 py-2 rounded-full">BUY</button></div>
+<div class="neon-box rounded-xl p-4 flex justify-between items-center border-2"><div><p class="font-bold">PRO - Rs.990 🔥</p><p class="text-xs opacity-60">30 Days - Most Popular</p></div><button onclick="buy('PRO 990')" class="btn-neon px-5 py-2 rounded-full">BUY</button></div>
+<div class="neon-box rounded-xl p-4 flex justify-between items-center"><div><p class="font-bold">VIP - Rs.1490</p><p class="text-xs opacity-60">Lifetime</p></div><button onclick="buy('VIP 1490')" class="btn-neon px-5 py-2 rounded-full">BUY</button></div>
+</div>
+
+<button onclick="buy('PRO')" class="w-full btn-neon py-4 rounded-full mt-8 text-xl">GET PRO NOW</button>
+<p class="text-center text-xs mt-6 opacity-30">© 2026 SHANX SENSI</p>
+</div>
+
+<script>
+const phone="9476XXXXXXX"; // <-- meka ube number eken maru karapan
+function buy(plan){
+const msg=`Machan SHANX SENSI ${plan} eka ganna one!`;
+window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`,'_blank');
+}
+</script>
+</body>
+</html>
